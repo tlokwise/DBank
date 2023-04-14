@@ -1,0 +1,85 @@
+:root{
+    --primaryBlue : #008F9D;
+    --primaryGreen: #00D46F;
+    --primaryOrange: #FF791B;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* body {
+    background-color: var(--primaryGreen)
+} */
+.phone {
+    width: 400px;
+    height: 700px;
+    border: 2px solid var(--primaryOrange);
+    border-radius: 10px;
+    padding-top: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    max-width: 100%;
+    background-color: var(--primaryBlue);
+    padding: 10px;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .navbar-ellipses {
+    color: white;
+}
+
+.balance-card {
+    box-shadow: 0px 0px 5px 1px currentColor;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.balance-card:active {
+    transform: scale(.98);
+}
+.favourite-transaction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.favourite-transaction .favourite-card {
+    height: 120px;
+    width: 150px;
+    box-shadow: 0px 0px 5px 1px currentColor;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.favourite-transaction .favourite-card:hover {
+    transform: scale(1.02);
+}
+.favourite-transaction .favourite-card:active {
+    transform: scale(.98);
+}
+.favourite-transaction .icon {
+    font-size: 2.5rem;
+    color: var(--primaryBlue);
+    text-align: center;
+}
+.navbar {
+    position: relative;
+    bottom: 0;
+}
